@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Logo from "../../public/images/logo.svg";
 import ButtonPrimary from "../shared/ButtonPrimary";
+import MobileNav from "./mobile-nav";
 
-const navs = [
+const navLinks = [
   {
     name: 'Docs',
     to: 'docs'
@@ -35,13 +36,13 @@ const Header = () => {
         }
       >
         <nav className="container grid grid-flow-col py-3 sm:py-4">
-          <div className="col-start-1 col-end-2 flex items-center">
-            <Logo className="w-auto" />
+          <div className="flex items-center">
+            <Logo />
           </div>
 
-          <ul className="hidden lg:flex col-start-2 col-end-8 items-center">
+          <ul className="hidden lg:flex  items-center">
             {
-              navs.map((item, idx) =>
+              navLinks.map((item, idx) =>
                 <Link
                   key={idx}
                   href={`/${item.to}`}
@@ -55,7 +56,8 @@ const Header = () => {
               )
             }
           </ul>
-          <div className="hidden col-start-10 col-end-12 md:flex justify-end items-center">
+
+          <div className="hidden  md:flex justify-end items-center">
             <Link href="/">
               <a className="sm:mr-9 capitalize tracking-wide text-purple hover:text-purple transition-all">
                 Sign In
@@ -63,6 +65,8 @@ const Header = () => {
             </Link>
             <ButtonPrimary>Request a demo</ButtonPrimary>
           </div>
+
+          <MobileNav links={navLinks} />
         </nav>
       </header>
     </>

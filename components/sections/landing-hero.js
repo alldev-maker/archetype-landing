@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ButtonPrimary from "./shared/ButtonPrimary";
+import ButtonPrimary from "../shared/ButtonPrimary";
 import Link from "next/link";
 
 const Hero = () => {

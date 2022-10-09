@@ -1,0 +1,51 @@
+/*  Tab Style  */
+
+.react-tabs {
+  border: 1px solid #616161;
+  border-radius: 20px;
+  padding: 24px;
+  @media only screen and (min-width: 769px) {
+    padding: 40px;
+    &__tab {
+      width: auto;
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+    padding: 60px;
+  }
+}
+
+.react-tabs__tab {
+  padding: 20px 40px !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  color: #616161 !important;
+  &-list {
+    border: none !important;
+    margin-bottom: 20px !important;
+    @media only screen and (min-width: 769px) {
+      margin-bottom: 120px !important;
+    }
+  }
+  &--selected {
+    border: none !important;
+    background: #7500CF !important;
+    border-radius: 10px !important;
+    color: white !important;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  @media only screen and (max-width: 769px) {
+    padding: 10px 20px !important;
+  }
+  @media only screen and (max-width: 680px) {
+    width: 100%;
+    font-size: 14px !important;
+    text-align: center;
+    &--selected {
+      font-weight: bold !important;
+    }
+  }
+}
+

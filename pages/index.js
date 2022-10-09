@@ -1,8 +1,12 @@
 import Head from 'next/head'
 import BlockWithImage from '../components/block-with-image'
-import Investors from '../components/investors'
-import Hero from '../components/landing-hero'
+import Investors from '../components/sections/investors'
+import Hero from '../components/sections/landing-hero'
 import Layout from '../components/layout/layout'
+import Guide from "../components/sections/guide"
+import Testimonials from "../components/sections/testimonials"
+import { Faq } from "../components/sections/faq"
+import CallToAction from "../components/sections/cta"
 
 const contents1 = [
   'Create and issue plans in seconds through custom branded invoices or payment links.',
@@ -49,6 +53,10 @@ export default function Home() {
           image={'/images/motion3.png'}
           background={false}
         />
+        <Guide />
+        <Testimonials />
+        <Faq />
+        <CallToAction />
       </Layout>
     </>
   )
