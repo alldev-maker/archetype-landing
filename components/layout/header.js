@@ -7,7 +7,7 @@ import MobileNav from "./mobile-nav";
 const navLinks = [
   {
     name: 'Docs',
-    to: 'docs'
+    to: 'http://docs.archetype.dev/'
   },
   {
     name: 'Blogs',
@@ -45,7 +45,7 @@ const Header = () => {
               navLinks.map((item, idx) =>
                 <Link
                   key={idx}
-                  href={`/${item.to}`}
+                  href={item.to}
                 >
                   <a className={
                     "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative text-gray"
@@ -58,7 +58,7 @@ const Header = () => {
           </ul>
 
           <div className="hidden  md:flex justify-end items-center">
-            <Link href="/">
+            <Link href="http://app.archetype.dev/">
               <a className="sm:mr-9 capitalize tracking-wide text-purple hover:text-purple transition-all">
                 Sign In
               </a>

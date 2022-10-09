@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import ButtonPrimary from "../shared/ButtonPrimary";
 import Link from "next/link";
 
@@ -25,13 +24,9 @@ const Hero = () => {
         </div>
         <div className="hidden lg:flex w-full">
           <div className="h-full w-full">
-            <Image
+            <img
               src="/images/hero-img.png"
               alt="Daily Revenue"
-              quality={100}
-              width="100%"
-              height="100%"
-              layout="responsive"
             />
           </div>
         </div>
