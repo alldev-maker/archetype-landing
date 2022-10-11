@@ -42,7 +42,8 @@ export default function Home() {
           image={'/images/motion1.png'}
           background={false}
         />
-        <BlockWithImage heading='Revenue Recognition and Automated Billing'
+        <BlockWithImage heading={`Revenue Recognition and
+        Automated Billing`}
           contents={contents2}
           image={'/images/motion2.png'}
           background={true}
