@@ -9,28 +9,28 @@ const Investors = () =>
           <img
             src="/images/mac.png"
             alt="mac"
-            className="block object-contain"
+            className="block object-contain w-2/3"
           ></img>
         </div>
         <div className="flex items-center justify-center">
           <img
             src="/images/magic-fund.png"
             alt="Magic Fund"
-            className="block object-contain"
+            className="block object-contain w-2/3"
           ></img>
         </div>
         <div className="flex items-center justify-center">
           <img
             src="/images/soma-capital.png"
             alt="Soma Capital"
-            className="block object-contain"
+            className="block object-contain w-2/3"
           ></img>
         </div>
         <div className="flex items-center justify-center">
           <img
             src="/images/hustle-fund.png"
             alt="Hustle Fund"
-            className="block object-contain"
+            className="block object-contain w-2/3"
           ></img>
         </div>
       </div>
