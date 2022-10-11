@@ -19,7 +19,7 @@ const tabList = [
   },
 ]
 
-const Guide = () => {
+const Features = () => {
   return < section className="section-gap container" >
     <Tabs>
       <TabList>
@@ -42,7 +42,7 @@ const Guide = () => {
                 </p>
               </div>
               <div className="w-full flex justify-center lg:w-1/2">
-                <img className="md:w-auto" src={item.image} alt='guide img' />
+                <img className="md:w-auto" src={item.image} alt='Features img' />
               </div>
             </div>
           </TabPanel>
@@ -52,4 +52,4 @@ const Guide = () => {
   </section>
 }
 
-export default Guide
+export default Features

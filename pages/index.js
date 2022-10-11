@@ -3,9 +3,9 @@ import BlockWithImage from '../components/block-with-image'
 import Investors from '../components/sections/investors'
 import Hero from '../components/sections/landing-hero'
 import Layout from '../components/layout/layout'
-import Guide from "../components/sections/guide"
+import Features from "../components/sections/features"
 import Testimonials from "../components/sections/testimonials"
-import { Faq } from "../components/sections/faq"
+import Faq from "../components/sections/faq"
 import CallToAction from "../components/sections/cta"
 
 const contents1 = [
@@ -53,7 +53,7 @@ export default function Home() {
           image={'/images/motion3.png'}
           background={false}
         />
-        <Guide />
+        <Features />
         <Testimonials />
         <Faq />
         <CallToAction />
