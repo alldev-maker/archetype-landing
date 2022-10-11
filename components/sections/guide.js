@@ -19,7 +19,7 @@ const tabList = [
   },
 ]
 
-const Features = () => {
+const Guide = () => {
   return < section className="section-gap container" >
     <Tabs>
       <TabList>
@@ -34,15 +34,15 @@ const Features = () => {
           <TabPanel key={idx}>
             <div className="flex flex-col justify-between lg:flex-row">
               <div className="w-full lg:w-1/2">
-                <h3 className="hidden mb-4 font-semibold text-2xl text-center text-gray lg:block md:font-bold md:text-4xl md:text-left md:mb-6">
+                <h3 className="hidden mb-4 font-semibold text-2xl text-gray lg:block md:mb-6">
                   {item.title}
                 </h3>
-                <p className="text-xs font-light text-gray md:text-2xl md:text-left">
+                <p className="text-sm font-light text-gray md:text-base">
                   {item.content}
                 </p>
               </div>
               <div className="w-full flex justify-center lg:w-1/2">
-                <img className="md:w-auto" src={item.image} alt='Features img' />
+                <img className="md:w-auto" src={item.image} alt='Guide img' />
               </div>
             </div>
           </TabPanel>
@@ -52,4 +52,4 @@ const Features = () => {
   </section>
 }
 
-export default Features
+export default Guide

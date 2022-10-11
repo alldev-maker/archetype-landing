@@ -3,7 +3,7 @@ import BlockWithImage from '../components/block-with-image'
 import Investors from '../components/sections/investors'
 import Hero from '../components/sections/landing-hero'
 import Layout from '../components/layout/layout'
-import Features from "../components/sections/features"
+import Guide from "../components/sections/guide"
 import Testimonials from "../components/sections/testimonials"
 import Faq from "../components/sections/faq"
 import CallToAction from "../components/sections/cta"
@@ -53,7 +53,7 @@ export default function Home() {
           image={'/images/motion3.png'}
           background={false}
         />
-        <Features />
+        <Guide />
         <Testimonials />
         <Faq />
         <CallToAction />
