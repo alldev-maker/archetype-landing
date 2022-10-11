@@ -1,17 +1,26 @@
 /*  Tab Style  */
-
+// .bg-image {
+//   background-image: url('../public/images/frost.png');
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   background-position: center;;
+// }
 .react-tabs {
-  border: 1px solid #616161;
+  background-color: #f1f1f1;
+  background-image:  url('../public/images/frost.png');
+    background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;;
   border-radius: 20px;
   padding: 20px 30px;
   @media only screen and (min-width: 769px) {
-    padding: 40px;
+    padding: 80px 40px;
     &__tab {
       width: auto;
     }
   }
   @media only screen and (min-width: 1440px) {
-    padding: 60px;
+    padding: 100px 60px;
   }
 }
 
