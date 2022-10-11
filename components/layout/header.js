@@ -3,6 +3,7 @@ import Link from "next/link";
 import Logo from "../../public/images/logo.svg";
 import ButtonPrimary from "../shared/ButtonPrimary";
 import MobileNav from "./mobile-nav";
+import RequestModal from "../shared/request-modal";
 
 const navLinks = [
   {
@@ -21,11 +22,20 @@ const navLinks = [
 
 const Header = () => {
   const [scrollActive, setScrollActive] = useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScrollActive(window.scrollY > 20);
     });
   }, []);
+
+  const handleEvent = () => {
+    setIsOpen(true);
+  };
+  const closeModal = () => {
+    setIsOpen(false);
+  }
 
   return (
     <>
@@ -63,9 +73,9 @@ const Header = () => {
                 Sign In
               </a>
             </Link>
-            <ButtonPrimary>Request a demo</ButtonPrimary>
+            <ButtonPrimary onPress={handleEvent}>Request a demo</ButtonPrimary>
           </div>
-
+          <RequestModal modalIsOpen={modalIsOpen} closeModal={closeModal} />
           <MobileNav links={navLinks} />
         </nav>
       </header>

@@ -32,16 +32,18 @@ const Guide = () => {
       {
         tabList.map((item, idx) =>
           <TabPanel key={idx}>
-            <div className="flex justify-between">
-              <div className="lg:max-w-[500px]">
+            <div className="flex flex-col justify-between lg:flex-row">
+              <div className="w-full lg:w-1/2">
                 <h3 className="hidden mb-4 font-semibold text-2xl text-center text-gray lg:block md:font-bold md:text-4xl md:text-left md:mb-6">
                   {item.title}
                 </h3>
-                <p className="text-xs font-light text-center text-gray md:text-2xl md:text-left">
+                <p className="text-xs font-light text-gray md:text-2xl md:text-left">
                   {item.content}
                 </p>
               </div>
-              <img className="hidden lg:block" src={item.image} alt='guide img' />
+              <div className="w-full flex justify-center lg:w-1/2">
+                <img className="md:w-auto" src={item.image} alt='guide img' />
+              </div>
             </div>
           </TabPanel>
         )

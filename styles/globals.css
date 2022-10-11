@@ -29,7 +29,6 @@ a {
   }
   .section-gap {
     @apply py-10 lg:py-[70px];
-
   }
 }
 
@@ -41,6 +40,10 @@ a {
 }
 .slick-dots .slick-active span {
   @apply bg-purple rounded-l-full rounded-r-full w-12;
+}
+
+.ReactModal__Overlay--after-open {
+  @apply z-50 !bg-black bg-opacity-75;
 }
 
 .purple-gradient {
