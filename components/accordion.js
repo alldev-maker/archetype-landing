@@ -25,7 +25,7 @@ export const Accordion = ({ question, answer }) => {
         className="w-full flex items-center justify-between text-left"
         onClick={toggleAccordion}
       >
-        <p className="text-lg text-gray lg:text-2xl">
+        <p className="text-lg text-gray lg:text-xl">
           {question}
         </p>
         <p className={`ml-4 w-10 h-10 flex flex-shrink-0 items-center justify-center border-4 border-[#575757] rounded-[50%]`}>
@@ -38,7 +38,7 @@ export const Accordion = ({ question, answer }) => {
         style={{ maxHeight: `${height}` }}
         className="overflow-hidden transition-max-height duration-500 ease-in-out"
       >
-        <p className="py-4 text-gray text-base lg:text-xl">{answer}</p>
+        <p className="py-4 text-gray text-base lg:text-lg">{answer}</p>
       </div>
     </div>
   );

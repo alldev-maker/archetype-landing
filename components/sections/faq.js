@@ -20,7 +20,7 @@ const faqs = [
 
 const Faq = () => (
   <section className="container section-gap">
-    <h2 className="mb-10 text-4xl uppercase text-[#575757] lg:text-[57px] lg:mb-16">Frequently Asked Questions</h2>
+    <h2 className="mb-10 text-3xl uppercase text-[#575757] lg:text-5xl lg:mb-16">Frequently Asked Questions</h2>
     <div className="w-full">
       {faqs.map((item, idx) => (
         <Accordion key={idx} {...item} />
