@@ -71,17 +71,17 @@ const Footer = () => {
                 </a>
               </p>
               <div className="flex items-center justify-end mt-[55px]">
-                <Link href='/'>
-                  <a>
+                <Link href='https://twitter.com/getarchetype'>
+                  <a className="mr-6">
                     <Twitter />
                   </a>
                 </Link>
-                <Link href='/'>
+                {/* <Link href='/'>
                   <a className="mx-6">
                     <Facebook />
                   </a>
-                </Link>
-                <Link href='/'>
+                </Link> */}
+                <Link href='http://linkedin.com/company/getarchetype'>
                   <a>
                     <Linkedin />
                   </a>
