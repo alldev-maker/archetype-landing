@@ -40,22 +40,22 @@ export default function Home() {
         <BlockWithImage heading='Flexible Usage Based Pricing to Empower both Self-Serve PLG and Sales-Led Motions'
           contents={contents1}
           image={'/images/motion1.png'}
-          background={false}
+          background={true}
         />
         <BlockWithImage heading={`Revenue Recognition and
         Automated Billing`}
           contents={contents2}
           image={'/images/motion2.png'}
-          background={true}
+          background={false}
         />
         <BlockWithImage heading={`Real-time Price
         Experimentation`}
           contents={contents3}
           image={'/images/motion3.png'}
-          background={false}
+          background={true}
         />
         <Guide />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Faq />
         <CallToAction />
       </Layout>

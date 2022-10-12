@@ -18,6 +18,7 @@ const RequestModal = ({ modalIsOpen, closeModal }) => {
     first_name: "",
     last_name: "",
     email: "",
+    message: ""
   };
   const [values, setValues] = useState(initialValues);
 
@@ -31,6 +32,9 @@ const RequestModal = ({ modalIsOpen, closeModal }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setValues({
+      message: "Please wait..."
+    })
     try {
       let res = await fetch("http://api.archetype.dev/v1/contact", {
         method: "POST",
@@ -41,8 +45,10 @@ const RequestModal = ({ modalIsOpen, closeModal }) => {
         }),
       });
       if (res.status === 200) {
+        setValues({ message: "Request sent successfully" })
         console.log("Request sent successfully");
       } else {
+        setValues({ message: "Some error occured" })
         console.log("Some error occured");
       }
     } catch (err) {
@@ -52,18 +58,24 @@ const RequestModal = ({ modalIsOpen, closeModal }) => {
 
   return <Modal
     isOpen={modalIsOpen}
-    onRequestClose={closeModal}
+    onRequestClose={() => {
+      closeModal()
+      setValues({ message: '' })
+    }}
     style={customStyles}
     contentLabel="Request Modal"
     ariaHideApp={false}
   >
     <div className="text-end">
-      <button onClick={closeModal}>
+      <button onClick={() => {
+        closeModal()
+        setValues({ message: '' })
+      }}>
         <IconClose />
       </button>
     </div>
 
-    <form className="py-5" onSubmit={handleSubmit}>
+    <form className="pt-6" onSubmit={handleSubmit}>
       <div className="grid grid-cols-2 gap-4">
         <div className="form-group mb-6">
           <input type="text" label="First Name"
@@ -89,6 +101,7 @@ const RequestModal = ({ modalIsOpen, closeModal }) => {
           placeholder="Email address" />
       </div>
       <button type="submit" className="w-full px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800  active:shadow-lg transition duration-150 ease-in-out">Submit</button>
+      <p className="mt-4 text-purple text-base">{values.message}</p>
     </form>
   </Modal>
 }

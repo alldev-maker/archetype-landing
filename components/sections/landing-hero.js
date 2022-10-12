@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ButtonPrimary from "../shared/ButtonPrimary";
-import Link from "next/link";
 import RequestModal from "../shared/request-modal";
 
 const Hero = () => {
@@ -24,11 +23,9 @@ const Hero = () => {
             </p>
             <div className="mx-auto text-center md:m-0 md:text-left">
               <ButtonPrimary addClass='mb-2 lg:mb-6 lg:px-10 lg:py-[18px] lg:text-lg lg:font-bold' onPress={handleEvent}>Request a demo</ButtonPrimary>
-              <Link href='/'>
-                <a className="block text-purple text-sm lg:font-light lg:text-lg">
-                  Request Sandbox version
-                </a>
-              </Link>
+              <button className="block text-purple text-sm lg:font-light lg:text-lg" onClick={handleEvent}>
+                Request Sandbox version
+              </button>
             </div>
           </div>
           <div className="hidden lg:flex w-full">
