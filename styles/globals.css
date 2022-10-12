@@ -42,6 +42,19 @@ a {
   @apply bg-purple rounded-l-full rounded-r-full w-12;
 }
 
+.react-tabs {
+}
+.react-tabs__tab {
+  @apply max-w-[155px] !text-center !text-gray !text-base !font-semibold;
+}
+.react-tabs__tab-list {
+  @apply !border-none !mb-10 flex items-center flex-wrap;
+}
+.react-tabs__tab--selected {
+  @apply !text-white !bg-purple !rounded-[10px] ;
+}
+
+
 .ReactModal__Overlay--after-open {
   @apply z-50 !bg-black bg-opacity-75;
 }
@@ -53,5 +66,28 @@ a {
 @media only screen and (min-width: 600px) {
   .purple-gradient {
     background: linear-gradient(270.65deg, #7501CF 0.64%, rgba(117, 1, 207, 0.46) 99.58%);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .guide-bg::before {
+    content: '';
+    position: absolute;
+    width: 430px;
+    height: 284px;
+    background-image: url('../public/images/rect.png');
+    z-index: -1;
+    left: 70px;
+    bottom: -143px;
+  }
+  .guide-bg::after {
+    content: '';
+    position: absolute;
+    width: 430px;
+    height: 284px;
+    background-image: url('../public/images/rect.png');
+    z-index: -1;
+    left: 390px;
+    top: -75px;
   }
 }
