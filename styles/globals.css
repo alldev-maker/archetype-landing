@@ -42,8 +42,6 @@ a {
   @apply bg-purple rounded-l-full rounded-r-full w-12;
 }
 
-.react-tabs {
-}
 .react-tabs__tab {
   @apply max-w-[155px] !text-center !text-gray !text-base !font-semibold;
 }
@@ -54,9 +52,12 @@ a {
   @apply !text-white !bg-purple !rounded-[10px] ;
 }
 
-
 .ReactModal__Overlay--after-open {
   @apply z-50 !bg-black bg-opacity-75;
+}
+
+.guide-bg {
+  position: relative;
 }
 
 .purple-gradient {
