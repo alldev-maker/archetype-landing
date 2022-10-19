@@ -14,10 +14,6 @@ const navLinks = [
     name: 'Blogs',
     to: 'blog'
   },
-  {
-    name: 'Case Studies',
-    to: 'case-studies'
-  }
 ]
 
 const Header = () => {
