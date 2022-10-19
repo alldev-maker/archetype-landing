@@ -7,30 +7,30 @@ const Investors = () =>
       <div className="grid grid-cols-2 gap-8 my-[30px] text-center lg:my-11 lg:grid-cols-4">
         <div className="flex items-center justify-center">
           <img
-            src="/images/mac.png"
+            src="/images/mac.svg"
             alt="mac"
-            className="block object-contain w-2/3"
+            className="block object-contain "
           ></img>
         </div>
         <div className="flex items-center justify-center">
           <img
-            src="/images/magic-fund.png"
+            src="/images/magic-fund.svg"
             alt="Magic Fund"
-            className="block object-contain w-2/3"
+            className="block object-contain "
           ></img>
         </div>
         <div className="flex items-center justify-center">
           <img
-            src="/images/soma-capital.png"
+            src="/images/soma-capital.svg"
             alt="Soma Capital"
-            className="block object-contain w-2/3"
+            className="block object-contain "
           ></img>
         </div>
         <div className="flex items-center justify-center">
           <img
-            src="/images/hustle-fund.png"
+            src="/images/hustle-fund.svg"
             alt="Hustle Fund"
-            className="block object-contain w-2/3"
+            className="block object-contain "
           ></img>
         </div>
       </div>
@@ -38,8 +38,8 @@ const Investors = () =>
         <p className="text-gray text-lg font-bold lg:text-[35px] lg:leading-[42px] lg:font-bold">
           angel investors from:
         </p>
-        <img className="px-4" src='images/google.png' alt='Google' />
-        <img className="pl-4" src='images/a16z.png' alt='a16z' />
+        <img className="px-4" src='images/google.svg' alt='Google' />
+        <img className="pl-4" src='images/a16z.svg' alt='a16z' />
       </div>
     </div>
   </section>

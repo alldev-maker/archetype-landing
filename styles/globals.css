@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400&display=swap');
 
 @import "slick-carousel/slick/slick.css";
+@import "react-tabs/style/react-tabs.css";
+
 
 html,
 body {
@@ -42,14 +44,20 @@ a {
   @apply bg-purple rounded-l-full rounded-r-full w-12;
 }
 
+.react-tabs {
+  @apply hidden lg:block;
+}
 .react-tabs__tab {
-  @apply max-w-[155px] !text-center !text-gray !text-base !font-semibold;
+  @apply max-w-[155px] !text-center !text-gray !text-base !font-semibold !border-none;
 }
 .react-tabs__tab-list {
   @apply !border-none !mb-10 flex items-center flex-wrap;
 }
 .react-tabs__tab--selected {
-  @apply !text-white !bg-purple !rounded-[10px] ;
+  @apply !text-white !bg-purple !rounded-[10px] !border-none;
+}
+.react-tabs__tab-panel--selected {
+  @apply !flex items-center justify-between;
 }
 
 .ReactModal__Overlay--after-open {

@@ -13,8 +13,8 @@ const Hero = () => {
   return (
     <>
       <section className="container mt-28">
-        <div className="md:flex">
-          <div className="flex flex-col justify-center items-start w-full lg:max-w-[550px]">
+        <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col justify-center items-start w-full lg:max-w-[435px]">
             <h1 className="mb-6 text-gray font-medium text-4xl leading-[44px] xl:font-bold xl:text-[64px] xl:leading-[77px]">
               Revenue Infrastructure for your <span className="font-sora text-purple">API</span>
             </h1>
@@ -31,7 +31,7 @@ const Hero = () => {
           <div className="hidden lg:flex w-full">
             <div className="h-full w-full">
               <img
-                src="/images/hero-img.png"
+                src="/images/hero-img.svg"
                 alt="Daily Revenue"
               />
             </div>
