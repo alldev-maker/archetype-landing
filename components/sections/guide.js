@@ -43,11 +43,10 @@ const Guide = () => {
           tabList.map((item, idx) =>
             <TabPanel key={idx}>
               <div>
-
-                <h3 className="mb-6 font-semibold text-3xl text-gray">
+                <h3 className="mb-5 font-semibold text-2xl text-gray">
                   {item.title}
                 </h3>
-                <p className="max-w-[635px] text-xl font-light text-gray">
+                <p className="max-w-[635px] text-lg font-light text-gray">
                   {item.content}
                 </p>
               </div>

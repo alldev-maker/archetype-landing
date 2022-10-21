@@ -13,7 +13,7 @@ const CallToAction = () => {
   return <>
     <section className="section-gap lg:py-[200px] bg-purple lg:bg-[url('/images/cta-back-img.png')] bg-no-repeat xl:bg-contain bg-right-bottom">
       <div className="container">
-        <h2 className="mb-10 text-white font-bold text-4xl lg:text-7xl">Ready to dive in?</h2>
+        <h2 className="mb-10 text-white font-bold text-3xl lg:text-5xl">Ready to dive in?</h2>
         <div className="flex flex-col md:flex-row md:items-center">
           <ButtonPrimary addClass='!py-4 !px-10 !bg-white text-purple text-lg lg:text-xl' onPress={handleEvent}>
             Request a demo

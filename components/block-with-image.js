@@ -3,11 +3,11 @@ const BlockWithImage = ({ heading, contents, image, background }) => {
     <div className="container">
       <div className={`flex items-center flex-wrap px-5 lg:px-14 ${background ? 'flex-row' : 'flex-row-reverse'}`}>
         <div className="w-full sm:w-1/2">
-          <h2 className={`max-w-[650px] mb-6 text-2xl whitespace-pre-line lg:text-4xl lg:font-medium ${background ? 'text-white' : 'text-gray'}`}>{heading}</h2>
+          <h2 className={`max-w-[650px] mb-6 text-xl whitespace-pre-line lg:text-3xl lg:font-medium ${background ? 'text-white' : 'text-gray'}`}>{heading}</h2>
           <ul className="max-w-[600px] list-disc pl-[18px] lg:pl-[23px]">
             {
               contents.map((item, idx) =>
-                <li key={idx} className={`font-light text-sm mb-3 lg:text-xl lg:mb-6 ${background ? 'text-white' : 'text-gray'}`}>
+                <li key={idx} className={`font-light text-sm mb-3 lg:text-base lg:mb-6 ${background ? 'text-white' : 'text-gray'}`}>
                   {item}
                 </li>
               )
